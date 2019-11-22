@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+@font-face {
+  font-family: 'Bebas Regular';
+  src: url('../font/BebasNeue\ Regular.otf');
+}
+
+@font-face {
+  font-family: 'Bebas Thin';
+  src: url('../font/BebasNeue\ Thin.otf');
+}
+
+body{
+  background-color: #9789f9;
+}
+
+h3, h4 {
+  padding: 0;
+  margin: 0;
+}
+
+ul, li {
+  list-style-type: none;
+}
+
+/* Layout */
+.ba-container{
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 1200px;
+}
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+  transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+  display: inline-block;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+  transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+textarea {
+
+}
+
+.ba-pricing {
+  display: flex;
+  margin: 50px -11px;
+}
+
+.ba-pricing__col {
+  padding: 0 11px;
+  flex-grow: 1;
+  width: 100px;
+}
+
+.ba-pricing__col--center {
+  transform: scale(1, 1.12);
+  position: relative;
+}
+
+.ba-pricing__col--center:before {
+  content: 'P';
+  text-align: center;
+  line-height: 46px;
+  font-size: 24px;
+  color:  #fff;
+  background-color: #fd8d7b;
+  border-radius: 50%;
+  display: block;
+  /* padding: 17px 15px; */
+  width: 46px;
+  height: 46px;
+  position: absolute;
+  right: 25px;
+  top: 25px
+}
+
+.ba-pricing__col--center:after {
+  content: '';
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: #fd8d7b;
+  position: absolute;
+  display: block;
+  right: 19px;
+  top: 15px;
+}
+
+.ba-pricing__circle {
+  position: relative;
+}
+
+.ba-pricing__circle:before {
+  content: '';
+  width: 4px;
+  height: 4px;
+  border-radius: 50px;
+  background-color: #fd8d7b;
+  position: absolute;
+  display: block;
+  right: 5px;
+  top: 10px;
+}
+
+.ba-pricing__popular {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: rgba(59, 64, 64, 0.88);
+  padding: 6px 24px 6px 11px;
+  font-size: 16px;
+  font-family: 'Bebas Regular';
+  display: inline-block;
+  position: absolute;
+  right: -80px;
+  top: 30px;
+  border-radius: 4px 14px 14px 3px;
+}
+
+.ba-pricing__popular:after {
+	right: 100%;
+	top: 50%;
+  border: solid transparent;
+  /* border-radius: 10% / 10%; */
+	content: "";
+	height: 0;
+	width: 0;
+	position: absolute;
+	border-right-color: rgba(59, 64, 64, 0.88);;
+	border-width: 14px;
+	margin-top: -14px;
+}
+
+.ba-price {
+  background-color: #f5f4f9;
+  padding: 35px 0;
+}
+
+.ba-price__rate {
+  font-family: 'Bebas Thin';
+  font-size: 60px;
+  color: #181818;
+  text-align: center;
+  margin: 0 0 25px 0;
+}
+
+.ba-price__rate:before {
+  content: '$';
+  font-size: 24px;
+  vertical-align: super;
+}
+
+.ba-price__rate:after {
+  content: '/hr';
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+.ba-price__position {
+  text-align: center;
+  font-family: 'Bebas Regular';
+  color: #181818;
+  font-size: 24px;
+  margin: 0 0 30px 0;
+  letter-spacing: 2px;
+}
+
+.ba-price__wrapper {
+  background-color: #fff;
+  border-radius: 300px 300px 0 0; 
+}
+
+.ba-price__body {
+  padding: 35px 15px 75px 15px;
+  background-color: #fff;
+  /* border-radius: 50% 50% 0 0 / 100% 100% 0 0; */
+  /* border-top: 1px solid red; */
+  /* border-radius: 180px 180px 0 0;  */
+  border-radius: 50% / 25%; 
+}
+
+.ba-price__icon {
+  width: 30px;
+  height: 30px;
+  margin: 0 auto;
+}
+
+.ba-price__photo {
+  width: 100%;
+  height: 100%;
+}
+
+.ba-price__list {
+  width: 220px;
+  margin: 40px auto 5px auto;
+  color: #181818;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.ba-price__item {
+  padding: 12px 0;
+}
+
+.ba-button {
+  padding: 20px 40px;
+  background-color: #6fcffb;
+  border-radius: 30px;
+  text-decoration: none;
+  font-family: 'Bebas Regular';
+  font-weight: bold;
+  font-size: 18px;
+  color: #fff;
+  letter-spacing: 2px;
+  margin: 30px auto -60px auto;
+  text-align: center;
+  width: 200px;
+  display: block;
+}
+
+.ba-button:hover {
+  background-color: #08b1ff;
+}
+
+.ba-button--center {
+  background-color: #fd8d7b;
+  margin: -30px auto 0 auto;
+  transform: scale(1, 0.9);
+}
+
+.ba-button--center:hover {
+  background-color: #eb0000a8;
+}

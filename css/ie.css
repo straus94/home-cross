@@ -1,0 +1,20 @@
+.ie8 .ba-pricing {
+    font-size: 0;
+}
+
+.ie8 .ba-pricing__col {
+    display: inline-block;
+    width: 33.33%;
+    box-sizing: border-box;
+    font-size: medium;
+}
+
+.ie8 .ba-pricing__popular {
+    padding: 6px 24px;
+    background-color: #3b4040;
+    margin-top: 20px;
+}
+
+.ie8 .ba-pricing__popular:after {
+
+}
